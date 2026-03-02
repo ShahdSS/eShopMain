@@ -7,7 +7,7 @@ import { CartService } from './cart.service';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './cart.html',
-  styleUrl: './cart.css',
+  styleUrl: './cart.scss',
 })
 export class Cart {
   constructor(public cartService: CartService) {}

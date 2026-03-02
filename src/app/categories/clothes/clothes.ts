@@ -9,7 +9,7 @@ import { clothes } from './clothes.model';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './clothes.html',
-  styleUrl: './clothes.css',
+  styleUrl: './clothes.scss',
 })
 export class Clothes implements OnInit {
   clothes: clothes[] = [];

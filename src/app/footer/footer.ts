@@ -7,7 +7,7 @@ import { RouterLink } from "@angular/router";
   selector: 'app-footer',
   imports: [RouterLink],
   templateUrl: './footer.html',
-  styleUrls: ['./footer.css'],
+  styleUrls: ['./footer.scss'],
 })
 export class Footer {
   quickLinks = [

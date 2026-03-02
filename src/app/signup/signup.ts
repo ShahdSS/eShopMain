@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgIf } from '@angular/common';
+// import { NgIf } from '@angular/common';
 import {
   FormBuilder,
   FormGroup,
@@ -14,7 +14,7 @@ import {
   selector: 'app-sign-up',
   imports: [ReactiveFormsModule, CommonModule, FormsModule],
   templateUrl: './signup.html',
-  styleUrl: './signup.css',
+  styleUrl: './signup.scss',
 })
 export class signup {
   signupForm: FormGroup;

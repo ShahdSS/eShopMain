@@ -11,7 +11,7 @@ import {
   selector: 'app-sign-in',
   imports: [CommonModule, ReactiveFormsModule, FormsModule],
   templateUrl: './signin.html',
-  styleUrl: './signin.css',
+  styleUrl: './signin.scss',
 })
 export class signin {
 

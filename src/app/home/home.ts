@@ -8,7 +8,7 @@ import { Clothes } from '../categories/clothes/clothes';
   selector: 'app-home',
   imports: [HeroBanner, Categories, Footer],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrl: './home.scss',
 })
 export class Home {
 
