@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  margin: 0;
+}
+
+form {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 32px;
+  background: #020617;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #f8fafc;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+div {
+  margin-bottom: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #f8fafc;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+input.ng-invalid.ng-touched {
+  border-color: #ef4444;
+}
+
+small {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #f87171;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
+}
+
+button:disabled {
+  background: #1e293b;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  form {
+    margin: 40px 16px;
+    padding: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}

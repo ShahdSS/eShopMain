@@ -1,0 +1,24 @@
+<header class="eShop-header">
+  <div class="container">
+
+    <div class="logo">
+      <span>eShop</span>
+    </div>
+
+    <nav>
+      <a routerLink="/">Home</a>
+    </nav>
+    
+    <div class="actions">
+      <a routerLink="/signin" class btn="Sign In">Sign In</a>
+      <a routerLink="/signup" class btn="Sign Up">Sign Up</a>
+    </div>
+    
+    <div class="actions">
+      <div class="cart" routerLink="/cart">
+        🛒 {{ cartService.totalItems() }}
+      </div>
+    </div>
+
+  </div>
+</header>

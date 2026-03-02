@@ -1,0 +1,57 @@
+<footer class="footer">
+  <div class="footer-container">
+
+    <section class="footer-col brand">
+      <h3 class="footer-title">eShop</h3>
+      <p>Your one-stop shop for all your needs.</p>
+    </section>
+
+    <section class="footer-col">
+      <h3 class="footer-title">Quick Links</h3>
+      <ul>
+          @for(link of quickLinks; track $index) {
+            <li>
+             <a [routerLink]="link.url">
+              {{ link.name}}
+          </a>
+          </li>
+          }
+      </ul>
+    </section>
+
+    <!-- <section class="footer-col">
+      <h3 class="footer-title">Customer Service</h3>
+      <ul>
+          @for (link of customerServices; track $index) {
+            <a [routerLink]="link.path">
+              {{ link.display }}
+          </a>
+          }
+      </ul>
+    </section> -->
+
+
+    <section class="footer-col">
+      <h3 class="footer-title">Stay Connected</h3>
+
+      <p>
+        Subscribe to our newsletter for the latest updates and offers.
+      </p>
+
+      <form class="newsletter-input" aria-label="Newsletter subscription">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          aria-label="Email address"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <p class="email">
+        <a href="mailto:support@eshop.com">support@eshop.com</a>
+      </p>
+    </section>
+
+  </div>
+</footer> 

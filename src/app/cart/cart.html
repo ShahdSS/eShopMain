@@ -1,0 +1,31 @@
+<h2>.... The Cart ....</h2>
+
+<!-- <div *ngIf="cartService.items().length === 0">
+  <p>The Cart is Empty !!</p>
+</div> -->
+
+@if (cartService.items().length === 0) {
+  <p>The Cart is Empty !!</p>
+}
+
+<!-- <div *ngFor="let item of cartService.items()" class="cart-item">
+  <img [src]="item.image" width="80" />
+  <h3>{{ item.title }}</h3>
+  <p>Price: ${{ item.price }}</p>
+  <p>Quantity: {{ item.quantity }}</p>
+
+  <button (click)="remove(item.id)">Remove</button>
+</div> -->
+
+@for (item of cartService.items(); track $index) {
+<div class="cart-item">
+  <img [src]="item.image" width="80" />
+  <h3>{{ item.title }}</h3>
+  <p>Price: ${{ item.price }}</p>
+  <p>Quantity: {{ item.quantity }}</p>
+
+  <button (click)="remove(item.id)">Remove</button>
+</div>
+} 
+
+<h3>Total Price: ${{ cartService.totalPrice() }}</h3>

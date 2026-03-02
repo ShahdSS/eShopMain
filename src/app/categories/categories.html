@@ -1,0 +1,25 @@
+<section class="circle-section" aria-label="Explore Our Categories">
+  <h2>Explore our Categories</h2>
+  <p class="subtitle">Lets explore the new trends together</p>
+
+  <!-- <div class="circle-grid">
+    <div class="circle-item" *ngFor="let c of categories">
+      <button class="circle-image" [routerLink]="['/clothes']">
+        <img [src]="c.image" [alt]="c.name">
+      </button>
+      <h4>{{ c.name }}</h4>
+    </div>
+  </div> -->
+
+  <div class ="circle-grid">
+    @for (c of categories; track c.name) {
+      <div class="circle-item">
+        <button class="circle-image" [routerLink]="['/clothes']">
+          <img [src]="c.image" [alt]="c.name" />
+        </button>
+        <h4>{{ c.name }}</h4>
+      </div>
+    }
+  </div>
+
+</section>
