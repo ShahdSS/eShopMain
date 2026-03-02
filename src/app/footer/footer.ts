@@ -28,19 +28,23 @@ export class Footer {
       url: '/contact' 
     },
     { 
-      name: 'Privacy Policy', 
+      name: 'Privacy', 
       url: '/privacy' 
     },
+    {
+      name: 'Policy',
+      url: '/policy'
+    }
   ];
 
-  customerServices=[
-    'Contact us',
-    'Order Tracking',
-    'FAQ',
-    'Shipping & Delivery',
-    'Size Guide',
-    'Returns & Exchanges',
-    'Terms & Conditions',
-    'Support'
-  ]
+  customerServices = [
+  { display: 'Contact us', path: '/contact-us' },
+  { display: 'Order Tracking', path: '/order-tracking' },
+  { display: 'FAQ', path: '/faq' },
+  { display: 'Shipping & Delivery', path: '/shipping-delivery' },
+  { display: 'Size Guide', path: '/size-guide' },
+  { display: 'Returns & Exchanges', path: '/returns-exchanges' },
+  { display: 'Terms & Conditions', path: '/terms-conditions' },
+  { display: 'Support', path: '/support' }
+];
 }

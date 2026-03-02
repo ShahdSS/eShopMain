@@ -19,16 +19,18 @@
       </ul>
     </section>
 
-    <!-- <section class="footer-col">
+    <section class="footer-col">
       <h3 class="footer-title">Customer Service</h3>
       <ul>
           @for (link of customerServices; track $index) {
+            <li>
             <a [routerLink]="link.path">
               {{ link.display }}
           </a>
+          </li>
           }
       </ul>
-    </section> -->
+    </section>
 
 
     <section class="footer-col">
