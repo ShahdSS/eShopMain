@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './categories.html',
-  styleUrls: ['./categories.css'],
+  styleUrls: ['./categories.scss'],
 })
 export class Categories {
   categories = [
