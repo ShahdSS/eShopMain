@@ -8,24 +8,25 @@
 
     <section class="footer-col">
       <h3 class="footer-title">Quick Links</h3>
-      <ul>
-          @for(link of quickLinks; track $index) {
+      
+        @for (link of quickLinks; track $index) {
+          <ul>
             <li>
-             <a [routerLink]="link.url">
-              {{ link.name}}
-          </a>
-          </li>
-          }
-      </ul>
-    </section>
+              <a [routerLink]="link.url">
+                {{ link.name}}
+              </a>
+            </li>
+          </ul>
+        }
+      </section>
 
     <section class="footer-col">
       <h3 class="footer-title">Customer Service</h3>
       <ul>
           @for (link of customerServices; track $index) {
             <li>
-            <a [routerLink]="link.path">
-              {{ link.display }}
+            <a [routerLink]="link.url">
+              {{ link.name }}
           </a>
           </li>
           }
