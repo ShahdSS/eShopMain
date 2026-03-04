@@ -1,68 +1,38 @@
-.circle-section{
-    padding: 70px 8%;
-    text-align: center;
-    background: #faf7f2;
+.circle-section {
+  padding: 70px 8%;
+  text-align: center;
+  background: #faf7f2;
 
-
- h2{
+  h2 {
     font-size: 36px;
     margin-bottom: 0px 0 40px;
-}
-}
+  }
 
-.circle-grid{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #faf7f2;
-}
-
-.circle-item{
-    width:140px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.circle-item:hover{
-    transform: translateY(-6px);
-}
-
-.circle-image{
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: #eaeaea;
-    overflow: hidden;
-    margin-bottom: 15px;
-}
-
-.circle-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.circle-item h4{
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.circle-item span{
-    font-size: 13px;
-    color: #888;
-}
-
-/* mobile */
-.circle-section {
+  /* mobile overrides */
   padding: 32px 12px;
   text-align: center;
   background: #faf7f2;
-}
 
-.circle-section h2 {
-  font-size: 22px;
-  margin-bottom: 6px;
+  h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 56px 40px;
+
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 72px 80px;
+
+    h2 {
+      font-size: 36px;
+    }
+  }
 }
 
 .subtitle {
@@ -70,101 +40,92 @@
   color: #777;
   margin-bottom: 24px;
   line-height: 1.4;
-}
 
-.circle-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 16px;
-  justify-items: center;
-}
-
-.circle-item {
-  width: 100%;
-  max-width: 120px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.circle-item:hover {
-  transform: translateY(-4px);
-}
-
-.circle-image {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 10px;
-  border-radius: 50%;
-  background: #eaeaea;
-  overflow: hidden;
-}
-
-.circle-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.circle-item h4 {
-  font-size: 14px;
-  margin: 0;
-}
-
-/* @media (min-width: 480px) {
-  .circle-image {
-    width: 110px;
-    height: 110px;
-  }
-
-  .circle-item {
-    max-width: 130px;
-  }
-} */
-
-/* tablet */
-@media (min-width: 768px) {
-  .circle-section {
-    padding: 56px 40px;
-  }
-
-  .circle-section h2 {
-    font-size: 30px;
-  }
-
-  .subtitle {
+  @media (min-width: 768px) {
     font-size: 15px;
     margin-bottom: 32px;
   }
 
-  .circle-grid {
-    gap: 24px;
-  }
-
-  .circle-image {
-    width: 140px;
-    height: 140px;
-  }
-
-  .circle-item h4 {
+  @media (min-width: 1024px) {
     font-size: 16px;
   }
 }
 
-/* desktop */
-@media (min-width: 1024px) {
-  .circle-section {
-    padding: 72px 80px;
+.circle-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #faf7f2;
+
+  /* mobile override */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 16px;
+  justify-items: center;
+
+  @media (min-width: 768px) {
+    gap: 24px;
   }
 
-  .circle-section h2 {
-    font-size: 36px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .circle-grid {
+  @media (min-width: 1024px) {
     gap: 32px;
+  }
+}
+
+.circle-item {
+  width: 140px;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+
+  /* mobile override */
+  width: 100%;
+  max-width: 120px;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  span {
+    font-size: 13px;
+    color: #888;
+  }
+}
+
+.circle-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #eaeaea;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* mobile override */
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+
+  @media (min-width: 768px) {
+    width: 140px;
+    height: 140px;
   }
 }

@@ -15,6 +15,11 @@ form {
   background: #020617;
   border-radius: 14px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+
+  @media (max-width: 480px) {
+    margin: 40px 16px;
+    padding: 24px;
+  }
 }
 
 h2 {
@@ -23,6 +28,10 @@ h2 {
   color: #f8fafc;
   font-size: 28px;
   font-weight: 600;
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 }
 
 div {
@@ -39,19 +48,19 @@ input {
   font-size: 15px;
   outline: none;
   transition: border 0.3s, box-shadow 0.3s;
-}
 
-input::placeholder {
-  color: #94a3b8;
-}
+  &::placeholder {
+    color: #94a3b8;
+  }
 
-input:focus {
-  border-color: #38bdf8;
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
-}
+  &:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+  }
 
-input.ng-invalid.ng-touched {
-  border-color: #ef4444;
+  &.ng-invalid.ng-touched {
+    border-color: #ef4444;
+  }
 }
 
 small {
@@ -73,26 +82,15 @@ button {
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-button:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
-}
-
-button:disabled {
-  background: #1e293b;
-  color: #94a3b8;
-  cursor: not-allowed;
-}
-
-@media (max-width: 480px) {
-  form {
-    margin: 40px 16px;
-    padding: 24px;
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
   }
 
-  h2 {
-    font-size: 24px;
+  &:disabled {
+    background: #1e293b;
+    color: #94a3b8;
+    cursor: not-allowed;
   }
 }
