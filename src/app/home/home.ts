@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { HeroBanner } from "../shared/hero-banner/hero-banner";
+import { HeroBanner } from '../layout/hero-banner/hero-banner';
 import { Categories } from '../categories/categories';
-import { Footer } from '../shared/footer/footer';
+import { Footer } from '../layout/footer/footer';
 import { Clothes } from '../categories/clothes/clothes';
 
 @Component({
