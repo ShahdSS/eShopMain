@@ -1,8 +1,8 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ClothesService } from '../../services/clothes.service';
-import { CartService } from '../../services/cart.service';
-import { clothes } from '../../models/clothes.model';
+import { ClothesService } from '../../../core/services/clothes.service';
+import { CartService } from '../../../core/services/cart.service';
+import { clothes } from '../../../core/models/clothes.model';
 
 @Component({
   selector: 'app-clothes',

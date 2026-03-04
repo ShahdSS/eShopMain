@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
-import { FooterNavigation } from '../../models/footer-navigation.model';
-import { quickLinks, customerServices } from '../../models/footer-navigation.model';
+import { FooterNavigation } from "../../core/models/footer-navigation.model";
+import { quickLinks, customerServices } from "../../core/models/footer-navigation.model";
 
 @Component({
   selector: 'app-footer',
