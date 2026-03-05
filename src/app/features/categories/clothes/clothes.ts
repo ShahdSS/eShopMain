@@ -1,4 +1,4 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, effect, OnInit, signal, Injectable } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ClothesService } from '../../../core/services/clothes.service';
 import { CartService } from '../../../core/services/cart.service';
@@ -19,7 +19,7 @@ export class Clothes implements OnInit {
     private clothesService: ClothesService,
     private cartService: CartService
   ) {}
-
+  
   ngOnInit(): void {
     this.clothesService.getClothes().subscribe({
       next: (data) => {
